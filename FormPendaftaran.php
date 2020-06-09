@@ -3,28 +3,19 @@
 <head>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 	<style>
-		.container {
-			width:100%;
-			height:100%;
-			position: fixed;
-			top: 20%;
-			left: 50%;
-			margin-top: 40px;
-			margin-left: -350px;
-			}
-
 		.password {
 			width: 100%;
 		}
 	</style>
 	<script type="text/javascript" src="jquery-3.4.1.min.js"></script>
 </head>
+<?php include('header.php');?>
 <body class="frame">
     <div>
-    <?php include('header.php')?>
+    <div>
 	    <center><h2>Formulir Pendaftaran</h2></center>
 	<br>
-	<br>
+	<br></div>
 <?php
 $error_nama = "";
 $error_username = "";
@@ -156,10 +147,9 @@ function cek_input($data) {
 	return $data;
 }
 ?>
-
 <div class="container">
 <div class="row">
-	<div class="col-md-7">
+	<div class="col-md">
 				<form method="POST" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>"> 
 				<div class="form-group row">
 					<label for="nama" class="col-sm-2 col-form-label">Nama</label>
@@ -227,16 +217,14 @@ function cek_input($data) {
 				</form>
 			</div>
 	</div>
-</div>
+</div>            
 </div>
 </body>
-
-<footer>
+<footer style="background-color:white; color:black;">
   <br>
   <center><p>©Copyright M Rizal Abdullah Rozi & Ahmad Nashirul Haq 
 </p></center>
 <center>Tahun 2020</center>
 <br>
 </footer>
-
 </html>
