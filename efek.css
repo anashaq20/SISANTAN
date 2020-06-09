@@ -1,0 +1,30 @@
+.menu {
+  overflow: hidden;
+  background-color: #333;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.menu a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.menu a:hover {
+			text-align: left;  
+			color: white;
+			background-color: red;  
+		}
+
+body {
+    font-size :14px;
+    font-family: Arial, Helvetica, Sans-serif;
+}
+.frame{
+      font-family: Arial, Helvetica, sans-serif;
+    background-color:#bfe635;
+    border-style:outset;
+    border-width:2px 2px 2px 2px;
+    border-color:solid #FFF;
+}
